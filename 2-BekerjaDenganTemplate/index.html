@@ -8,29 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Latihan vuejs 2 - Ch 1</title>
+    <title>Latihan VueJS 2 - Ch 2</title>
   </head>
   <body>
     <div class="container" id="app">
-        <p>
-            <strong>Bound: </strong><br>
-            <span>{{ name }}</span>
-        </p>
-        
-        <p>
-            <strong>Parsed: </strong><br>
-            <span v-html="name"></span>
-        </p>
-
-        <p v-once>
-            <strong>Unchangeable: </strong><br>
-            <span>{{ name }}</span>
-        </p>
-
-        <h5>Text</h5>
-        <textarea name="" id="" class="form-control" rows="5" v-model="name"></textarea>
-        
-
+        <!-- <img :class="imgClass + ' ' + 'w-25'" :src="products[0].image" :alt="products[0].name"> -->
+        <img v-bind="{
+            class: imgClass + ' ' + 'w-25',
+            src: products[0].image,
+            alt: products[0].name,
+        }">
     </div>
 
     <!-- Optional JavaScript -->
