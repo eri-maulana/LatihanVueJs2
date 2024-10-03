@@ -11,6 +11,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2e9f86bd4d.js" crossorigin="anonymous"></script>
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- My Style -->
      <link rel="stylesheet" href="app.css">
 
@@ -31,7 +34,7 @@
       </nav>
       <br>
       <h1>My Shop</h1>
-      <transition name="fade">
+      <transition name="custom" enter-active-class="animated tada" leave-active-class="animated heartBeat">
         <div v-if="style.sliderStatus">
           <div class=" align-items-center " :class="sliderState">
             <label for="" :class="style.label">Max</label>
